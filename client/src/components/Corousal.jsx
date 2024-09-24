@@ -174,7 +174,7 @@ export const Card = ({ card, index, layout = false }) => {
                 <IconX className="h-4 w-4 text-neutral-100 dark:text-neutral-900" />
               </button>
               <video
-                src={card.video || "/sample-video.mp4"}
+                src={card.video || "/Sample.mp4"}
                 controls
                 className="w-full rounded-lg"
               />

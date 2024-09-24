@@ -83,15 +83,15 @@ function Fixture() {
 
 function FixtureCard({ details }) {
     return (
-        <div className='bg-white p-5 shadow rounded-lg w-[30%] min-w-[300px]'>
-            <div className='text-sm'>{details.stadium}</div>
+        <div className='bg-white p-5 shadow rounded-lg w-full sm:w-[45%] lg:w-[30%] min-w-[300px]'>
+            <div className='text-sm font-medium'>{details.stadium}</div>
             <div className='text-xs text-gray-600 font-medium'>
                 {details.date}, {details.time}
             </div>
             <div className="flex flex-row items-center justify-between mt-4">
                 <Team team={details.team2} isTeam2={true} />
                 <div className="vs-logo mx-4">
-                    <img src="/vs-logo.png" width={64} alt="VS" />
+                    <img src="/vs-logo.png" width={48} height={48} alt="VS" className="object-contain" />
                 </div>
                 <Team team={details.team1} isTeam2={false} />
             </div>
@@ -119,7 +119,7 @@ function Team({ team, isTeam2 }) {
         <div className={`flex ${isTeam2 ? 'flex-row-reverse items-center' : 'flex-row items-center'} space-x-3`}>
             {/* Score for Team 2 should come first */}
             <div className={`flex flex-col ${isTeam2 ? 'items-center' : ''}`}>
-                <div className="score text-xl font-medium">
+                <div className="score text-xl sm:text-2xl font-medium">
                     {team.runs}/{team.wickets}
                 </div>
                 <div className='text-gray-600 text-xs'>
@@ -130,9 +130,9 @@ function Team({ team, isTeam2 }) {
             {/* Team Logo and Name */}
             <div className="flex flex-col items-center">
                 <div className="logo p-2 rounded-full border border-violet-500">
-                    <img src={logoSrc} width={30} height={30} className="object-cover h-8 w-8 rounded-full" alt={`${team.name} logo`} />
+                    <img src={logoSrc} width={40} height={40} className="object-cover h-8 w-8 sm:h-10 sm:w-10 rounded-full" alt={`${team.name} logo`} />
                 </div>
-                <div className="team-name capitalize text-xs font-semibold mt-2 text-center">
+                <div className="team-name capitalize text-xs sm:text-sm font-semibold mt-2 text-center">
                     {team.name}
                 </div>
             </div>

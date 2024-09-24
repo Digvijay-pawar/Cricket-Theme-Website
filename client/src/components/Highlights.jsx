@@ -8,11 +8,11 @@ const generateDummyVideos = () => {
   
   // Dummy video URLs (replace with actual URLs or local files if needed)
   const videoUrls = [
-    "https://www.w3schools.com/html/mov_bbb.mp4",
-    "https://www.w3schools.com/html/movie.mp4",
-    "https://youtu.be/tscMSXk_jaQ?si=wSeYTuyQ0u0o3sMg",
-    "https://www.w3schools.com/html/movie.mp4",
-    "https://www.w3schools.com/html/mov_bbb.mp4",
+    "/Sample-1.mp4",
+    "/Sample.mp4",
+    "/Sample-1.mp4",
+    "/Sample.mp4",
+    "/Sample-1.mp4",
   ];
 
   return Array.from({ length: 10 }).map((_, index) => ({
