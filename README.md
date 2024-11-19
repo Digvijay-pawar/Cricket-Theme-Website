@@ -33,3 +33,9 @@ Follow these steps to set up your project locally:
 
     ```bash
     npm run dev
+
+
+![image](https://github.com/user-attachments/assets/2d351902-db94-4a8f-93c8-3e3a5a2184e5)
+![image](https://github.com/user-attachments/assets/36229e84-6195-46c2-a93f-b9b7534e24f9)
+![image](https://github.com/user-attachments/assets/7494707d-d4b0-46f6-9631-3e4b2b70a8c3)
+
